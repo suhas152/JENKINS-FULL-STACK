@@ -1,0 +1,190 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-title {
+  color: var(--primary);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: var(--secondary);
+  border-radius: 2px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: rgb(235, 202, 202);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--gray-light);
+  padding-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(8, 32, 138, 0.2);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: rgb(0, 0, 0);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-danger {
+  background-color: var(--danger);
+  color: rgb(255, 10, 10);
+}
+
+.btn-danger:hover {
+  background-color: #aa0e0e;
+}
+
+.btn-success {
+  background-color: var(--success);
+  color: rgb(21, 52, 207);
+}
+
+.btn-success:hover {
+  background-color: #04e6ad;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: rgb(240, 153, 153);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: var(--primary);
+  color: white;
+  text-align: left;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.table th:first-child {
+  border-top-left-radius: 5px;
+}
+
+.table th:last-child {
+  border-top-right-radius: 5px;
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tr:hover {
+  background-color: var(--gray-light);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.function-details {
+  background-color: var(--light);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 4px solid var(--primary);
+}
+
+.function-details p {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.function-details p strong {
+  color: var(--primary);
+}
